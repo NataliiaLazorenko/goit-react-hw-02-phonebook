@@ -23,6 +23,10 @@ class ContactForm extends Component {
   handleSubmit = event => {
     event.preventDefault();
 
+    if (this.state.name === '') {
+      return;
+    }
+
     this.props.onFormSubmit(this.state);
     this.reset();
   };

@@ -29,10 +29,6 @@ class App extends Component {
       return;
     }
 
-    if (name === '' || number === '') {
-      alert(`Please fill in all fields`);
-    }
-
     const contact = {
       id: shortid.generate(),
       name,
